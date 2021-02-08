@@ -1,3 +1,4 @@
+include ':shared:navigation'
 include ':features:profile'
 include ':features:detail'
 include ':features:home'
