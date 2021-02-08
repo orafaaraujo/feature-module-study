@@ -1,9 +1,10 @@
 package com.orafaraujo.features.detail
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.orafaraujo.features.navigations.IntentProvider
 
 private const val TAG = "DetailActivity"
 
@@ -15,11 +16,13 @@ class DetailActivity : AppCompatActivity() {
         Log.d(TAG, "onCreate")
 
         findViewById<Button>(R.id.go_to_home_button).setOnClickListener {
-            // Go to home
+            startActivity(IntentProvider.getHomeIntent(this))
+            finish()
         }
 
         findViewById<Button>(R.id.go_to_profile_button).setOnClickListener {
-            // Go to profile
+            startActivity(IntentProvider.getProfileIntent(this))
+            finish()
         }
     }
 }

@@ -3,7 +3,12 @@
     package="com.orafaraujo.features.detail">
 
     <application>
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".DetailActivity">
+            <intent-filter>
+                <action android:name="com.orafaraujo.featuremodulestudy.features.detail" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
