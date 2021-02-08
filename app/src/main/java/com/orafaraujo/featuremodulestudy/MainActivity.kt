@@ -1,10 +1,10 @@
 package com.orafaraujo.featuremodulestudy
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.orafaraujo.features.home.HomeActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.gaelmarhic.quadrant.QuadrantConstants
 
 private const val TAG = "MainActivity"
 
@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d(TAG, "onCreate")
 
-        val intent = Intent(this, HomeActivity::class.java)
+        val intent = Intent().setClassName(this, QuadrantConstants.HOME_ACTIVITY)
         startActivity(intent)
         finish()
     }

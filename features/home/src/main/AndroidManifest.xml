@@ -3,7 +3,7 @@
     package="com.orafaraujo.features.home">
 
     <application>
-        <activity android:name=".HomeActivity" />
+        <activity android:name="com.orafaraujo.features.home.HomeActivity" />
     </application>
 
 </manifest>

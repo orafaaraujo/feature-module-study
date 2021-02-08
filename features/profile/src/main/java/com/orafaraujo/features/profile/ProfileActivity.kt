@@ -1,9 +1,11 @@
 package com.orafaraujo.features.profile
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.gaelmarhic.quadrant.QuadrantConstants
 
 private const val TAG = "ProfileActivity";
 
@@ -15,11 +17,15 @@ class ProfileActivity : AppCompatActivity() {
         Log.d(TAG, "onCreate")
 
         findViewById<Button>(R.id.go_to_home_button).setOnClickListener {
-            // Go to home
+            val intent = Intent().setClassName(this, QuadrantConstants.HOME_ACTIVITY)
+            startActivity(intent)
+            finish()
         }
 
         findViewById<Button>(R.id.go_to_detail_button).setOnClickListener {
-            // Go to detail
+            val intent = Intent().setClassName(this, QuadrantConstants.DETAIL_ACTIVITY)
+            startActivity(intent)
+            finish()
         }
     }
 }

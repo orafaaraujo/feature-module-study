@@ -3,7 +3,7 @@
     package="com.orafaraujo.features.detail">
 
     <application>
-        <activity android:name=".DetailActivity" />
+        <activity android:name="com.orafaraujo.features.detail.DetailActivity" />
     </application>
 
 </manifest>
