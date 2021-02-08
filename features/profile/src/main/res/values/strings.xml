@@ -1,0 +1,5 @@
+<resources>
+    <string name="profile_module">Profile</string>
+    <string name="go_to_home_button">Go to home</string>
+    <string name="go_to_detail_button">Go to detail</string>
+</resources>
