@@ -1,0 +1,19 @@
+package com.orafaraujo.featuremodulestudy.navigation
+
+import com.orafaraujo.shared.navigation.NavigationProvider
+import com.orafaraujo.shared.navigation.features.DetailNavigation
+import com.orafaraujo.shared.navigation.features.HomeNavigation
+import com.orafaraujo.shared.navigation.features.ProfileNavigation
+
+class NavigationProviderImpl(
+    private val homeNavigation: HomeNavigation,
+    private val detailNavigation: DetailNavigation,
+    private val profileNavigation: ProfileNavigation
+) : NavigationProvider {
+
+    override fun provideHomeNavigation(): HomeNavigation = homeNavigation
+
+    override fun provideDetailNavigation(): DetailNavigation = detailNavigation
+
+    override fun provideProfileNavigation(): ProfileNavigation = profileNavigation
+}

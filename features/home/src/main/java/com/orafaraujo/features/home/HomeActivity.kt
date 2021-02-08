@@ -1,13 +1,17 @@
 package com.orafaraujo.features.home
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.orafaraujo.shared.navigation.NavigationProvider
+import org.koin.android.ext.android.inject
 
 private const val TAG = "HomeActivity"
 
 class HomeActivity : AppCompatActivity() {
+
+    private val navigationProvider by inject<NavigationProvider>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,11 +19,11 @@ class HomeActivity : AppCompatActivity() {
         Log.d(TAG, "onCreate")
 
         findViewById<Button>(R.id.go_to_profile_button).setOnClickListener {
-            // Go to profile
+            navigationProvider.provideProfileNavigation().openScreen()
         }
 
         findViewById<Button>(R.id.go_to_detail_button).setOnClickListener {
-            // Go to detail
+            navigationProvider.provideDetailNavigation().openScreen()
         }
     }
 }

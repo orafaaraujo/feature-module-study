@@ -1,22 +1,22 @@
 package com.orafaraujo.featuremodulestudy
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.orafaraujo.features.home.HomeActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.orafaraujo.shared.navigation.NavigationProvider
+import org.koin.android.ext.android.inject
 
 private const val TAG = "MainActivity"
 
 class MainActivity : AppCompatActivity() {
+
+    private val navigationProvider by inject<NavigationProvider>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d(TAG, "onCreate")
 
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
-        finish()
+        navigationProvider.provideHomeNavigation().openScreen()
     }
 }
