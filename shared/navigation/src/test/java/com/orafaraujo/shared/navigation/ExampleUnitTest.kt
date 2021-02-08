@@ -1,4 +1,4 @@
-package com.orafaraujo.features.detail
+package com.orafaraujo.shared.navigation
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
