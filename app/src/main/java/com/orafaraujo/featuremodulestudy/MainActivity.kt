@@ -1,10 +1,9 @@
 package com.orafaraujo.featuremodulestudy
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.orafaraujo.features.home.HomeActivity
+import androidx.appcompat.app.AppCompatActivity
+import com.orafaraujo.features.navigations.IntentProvider
 
 private const val TAG = "MainActivity"
 
@@ -15,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         Log.d(TAG, "onCreate")
 
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
+        startActivity(IntentProvider.getHomeIntent(this))
         finish()
     }
 }
