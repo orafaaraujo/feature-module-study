@@ -1,9 +1,9 @@
 package com.orafaraujo.features.detail
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 private const val TAG = "DetailActivity"
 
