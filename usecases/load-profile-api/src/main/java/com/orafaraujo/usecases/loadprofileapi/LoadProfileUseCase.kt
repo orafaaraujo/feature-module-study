@@ -1,8 +1,8 @@
 package com.orafaraujo.usecases.loadprofileapi
 
-import com.orafaraujo.usecases.loadprofileapi.models.Profile
+import com.orafaraujo.usecases.loadprofileapi.models.ProfileDTO
 
 interface LoadProfileUseCase {
 
-    fun loadProfile(id: Long): Profile
+   suspend fun loadProfile(id: Long): ProfileDTO
 }

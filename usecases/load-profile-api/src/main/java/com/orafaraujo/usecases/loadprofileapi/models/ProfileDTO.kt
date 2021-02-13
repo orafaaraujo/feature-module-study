@@ -1,6 +1,6 @@
 package com.orafaraujo.usecases.loadprofileapi.models
 
-data class Profile(
+data class ProfileDTO(
     val id: Long,
     val name: String
 )
