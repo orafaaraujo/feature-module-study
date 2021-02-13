@@ -1,5 +1,6 @@
 package com.orafaraujo.features.profileimpl
 
+import com.orafaraujo.features.profileapi.models.ProfilePresentationModel
 import com.orafaraujo.usecases.loadprofileapi.models.ProfileDTO
 
 class ProfileMapper {

@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.orafaraujo.features.profileapi.models.ProfilePresentationModel
 import kotlinx.coroutines.flow.collect
 
 private const val TAG = "ProfileActivity"

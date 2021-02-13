@@ -1,4 +1,4 @@
-package com.orafaraujo.features.profileimpl
+package com.orafaraujo.features.profileapi.models
 
 data class ProfilePresentationModel(
     val id: Long,

@@ -34,6 +34,7 @@ android {
 
 dependencies {
     implementation project(path: ':usecases:load-profile-api')
+    implementation project(path: ':features:profile-api')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'

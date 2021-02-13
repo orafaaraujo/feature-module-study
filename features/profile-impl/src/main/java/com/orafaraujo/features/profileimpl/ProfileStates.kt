@@ -1,5 +1,7 @@
 package com.orafaraujo.features.profileimpl
 
+import com.orafaraujo.features.profileapi.models.ProfilePresentationModel
+
 sealed class ProfileStates {
 
     object Loading : ProfileStates()
