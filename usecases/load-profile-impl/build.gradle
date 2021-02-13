@@ -9,8 +9,8 @@ java {
 }
 
 dependencies {
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-
     implementation project(path: ':usecases:load-profile-api')
     implementation project(path: ':repositories:profile-api')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }
