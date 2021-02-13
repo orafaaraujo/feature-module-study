@@ -1,5 +1,9 @@
+rootProject.name = "Feature Module Study"
+include ':app'
+
+include ':features:home'
 include ':features:profile'
 include ':features:detail'
-include ':features:home'
-include ':app'
-rootProject.name = "Feature Module Study"
+
+include ':usecases:load-profile-api'
+include ':usecases:load-profile-impl'
