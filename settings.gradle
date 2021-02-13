@@ -7,3 +7,6 @@ include ':features:detail'
 
 include ':usecases:load-profile-api'
 include ':usecases:load-profile-impl'
+
+include ':repositories:profile-api'
+include ':repositories:profile-impl'
