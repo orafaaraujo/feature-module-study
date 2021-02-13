@@ -1,4 +1,4 @@
-package com.orafaraujo.features.profileimpl
+package com.orafaraujo.features.profileimpl.view
 
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +8,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.orafaraujo.features.profileapi.models.ProfilePresentationModel
+import com.orafaraujo.features.profileimpl.R
 import kotlinx.coroutines.flow.collect
 
 private const val TAG = "ProfileActivity"
@@ -54,5 +55,9 @@ class ProfileActivity : AppCompatActivity() {
     private fun onSuccessState(profile: ProfilePresentationModel) {
         Log.d(TAG, "onSuccessState() called with: profile = [$profile]")
         Toast.makeText(this, profile.name, Toast.LENGTH_SHORT).show()
+    }
+
+    companion object {
+        internal const val EXTRA_PROFILE_ID = "EXTRA_PROFILE_ID"
     }
 }

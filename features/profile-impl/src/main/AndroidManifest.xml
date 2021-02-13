@@ -3,7 +3,7 @@
     package="com.orafaraujo.features.profileimpl">
 
     <application>
-        <activity android:name="com.orafaraujo.features.profileimpl.ProfileActivity" />
+        <activity android:name="com.orafaraujo.features.profileimpl.view.ProfileActivity" />
     </application>
 
 </manifest>

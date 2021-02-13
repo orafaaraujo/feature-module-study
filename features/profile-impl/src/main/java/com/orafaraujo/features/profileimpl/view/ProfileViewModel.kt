@@ -1,4 +1,4 @@
-package com.orafaraujo.features.profileimpl
+package com.orafaraujo.features.profileimpl.view
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

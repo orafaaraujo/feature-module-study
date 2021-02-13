@@ -1,4 +1,4 @@
-package com.orafaraujo.features.profileimpl
+package com.orafaraujo.features.profileimpl.view
 
 import com.orafaraujo.features.profileapi.models.ProfilePresentationModel
 
