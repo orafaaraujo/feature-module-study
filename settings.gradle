@@ -4,7 +4,7 @@ include ':app'
 include ':features:home'
 include ':features:detail'
 include ':features:profile-api'
-include ':features:profile'
+include ':features:profile-impl'
 
 include ':usecases:load-profile-api'
 include ':usecases:load-profile-impl'

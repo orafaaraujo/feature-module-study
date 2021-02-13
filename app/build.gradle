@@ -34,7 +34,7 @@ android {
 
 dependencies {
     implementation project(path: ':features:detail')
-    implementation project(path: ':features:profile')
+    implementation project(path: ':features:profile-impl')
     implementation project(path: ':features:home')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
