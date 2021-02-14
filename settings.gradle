@@ -9,5 +9,5 @@ include ':features:profile-impl'
 include ':usecases:load-profile-api'
 include ':usecases:load-profile-impl'
 
-include ':repositories:profile-api'
-include ':repositories:profile-impl'
+include ':repositories:profile-remote-api'
+include ':repositories:profile-remote-impl'

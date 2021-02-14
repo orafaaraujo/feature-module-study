@@ -11,7 +11,7 @@ java {
 
 dependencies {
     implementation project(path: ':usecases:load-profile-api')
-    implementation project(path: ':repositories:profile-api')
+    implementation project(path: ':repositories:profile-remote-api')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 

@@ -40,8 +40,8 @@ dependencies {
     implementation project(path: ':usecases:load-profile-api')
     implementation project(path: ':usecases:load-profile-impl')
 
-    implementation project(path: ':repositories:profile-api')
-    implementation project(path: ':repositories:profile-impl')
+    implementation project(path: ':repositories:profile-remote-api')
+    implementation project(path: ':repositories:profile-remote-impl')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
