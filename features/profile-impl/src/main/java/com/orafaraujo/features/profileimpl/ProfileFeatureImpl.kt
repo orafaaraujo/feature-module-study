@@ -2,10 +2,10 @@ package com.orafaraujo.features.profileimpl
 
 import android.content.Context
 import android.content.Intent
-import com.orafaraujo.features.profileapi.ProfileFeatureApi
+import com.orafaraujo.features.profileapi.ProfileFeature
 import com.orafaraujo.features.profileimpl.view.ProfileActivity
 
-class ProfileFeatureImpl(private val context: Context) : ProfileFeatureApi {
+class ProfileFeatureImpl(private val context: Context) : ProfileFeature {
 
     override fun start(id: Long) {
         val intent = Intent(context, ProfileActivity::class.java)

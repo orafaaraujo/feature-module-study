@@ -1,6 +1,6 @@
 package com.orafaraujo.features.profileapi
 
-interface ProfileFeatureApi {
+interface ProfileFeature {
 
     fun start(id: Long)
 }
