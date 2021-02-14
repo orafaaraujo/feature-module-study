@@ -2,7 +2,7 @@ rootProject.name = "Feature Module Study"
 include ':app'
 
 include ':features:home'
-include ':features:detail'
+
 include ':features:profile-api'
 include ':features:profile-impl'
 
