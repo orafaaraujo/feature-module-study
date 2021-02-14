@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -43,4 +44,7 @@ dependencies {
     implementation project(path: ':repositories:profile-impl')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'com.google.dagger:dagger:2.32'
+    kapt 'com.google.dagger:dagger-compiler:2.32'
 }
