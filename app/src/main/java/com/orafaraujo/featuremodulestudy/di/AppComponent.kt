@@ -10,10 +10,10 @@ import javax.inject.Singleton
 @Singleton
 @Component(
     modules = [
+        AppModule::class,
         SubComponentsModule::class,
         ViewModelFactoryModule::class,
-        ProfileModule::class,
-        UtilsModule::class
+        ProfileModule::class
     ]
 )
 interface AppComponent {
