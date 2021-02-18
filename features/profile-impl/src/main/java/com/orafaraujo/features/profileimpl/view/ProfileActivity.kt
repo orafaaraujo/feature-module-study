@@ -4,33 +4,31 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.orafaraujo.features.profileapi.models.ProfilePresentationModel
 import com.orafaraujo.features.profileimpl.R
-import kotlinx.coroutines.flow.collect
+import com.orafaraujo.features.profileimpl.di.ProfileComponentProvider
 
 private const val TAG = "ProfileActivity"
 
 class ProfileActivity : AppCompatActivity() {
 
-    private val viewModel: ProfileViewModel by viewModels()
-
     override fun onCreate(savedInstanceState: Bundle?) {
+        getComponent().inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
         Log.d(TAG, "onCreate")
 
-        viewModel.loadProfile(0)
+//        viewModel.loadProfile(0)
         lifecycleScope.launchWhenStarted {
-            viewModel.states.collect { state ->
-                when (state) {
-                    is ProfileStates.Loading -> onLoadingState()
-                    is ProfileStates.Error -> onErrorState(state.message)
-                    is ProfileStates.Success -> onSuccessState(state.presentationObject)
-                }
-            }
+//            viewModel.states.collect { state ->
+//                when (state) {
+//                    is ProfileStates.Loading -> onLoadingState()
+//                    is ProfileStates.Error -> onErrorState(state.message)
+//                    is ProfileStates.Success -> onSuccessState(state.presentationObject)
+//                }
+//            }
         }
 
         findViewById<Button>(R.id.go_to_home_button).setOnClickListener {
@@ -61,3 +59,9 @@ class ProfileActivity : AppCompatActivity() {
         internal const val EXTRA_PROFILE_ID = "EXTRA_PROFILE_ID"
     }
 }
+
+
+private fun ProfileActivity.getComponent() = (application as ProfileComponentProvider)
+    .provideProfileComponentFactory()
+    .create()
+
