@@ -17,6 +17,7 @@ class MainApplication : Application(), HomeComponentProvider, ProfileComponentPr
         super.onCreate()
 
         appComponent = DaggerAppComponent.builder()
+            .appModule(AppModule(this))
             .build()
 
     }
