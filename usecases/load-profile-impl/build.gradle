@@ -9,6 +9,12 @@ java {
     targetCompatibility = JavaVersion.VERSION_1_8
 }
 
+kapt {
+    useBuildCache = true
+    mapDiagnosticLocations = true
+    correctErrorTypes = true
+}
+
 dependencies {
     implementation project(path: ':usecases:load-profile-api')
     implementation project(path: ':repositories:profile-remote-api')

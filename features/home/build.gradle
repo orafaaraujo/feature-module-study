@@ -33,6 +33,12 @@ android {
     }
 }
 
+kapt {
+    useBuildCache = true
+    mapDiagnosticLocations = true
+    correctErrorTypes = true
+}
+
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
