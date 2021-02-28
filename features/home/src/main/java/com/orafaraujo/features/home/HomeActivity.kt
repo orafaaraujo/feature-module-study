@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import com.orafaraujo.features.home.di.HomeComponentProvider
 import com.orafaraujo.features.profileapi.ProfileFeature
 import javax.inject.Inject

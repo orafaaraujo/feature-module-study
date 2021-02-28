@@ -9,7 +9,6 @@ import com.orafaraujo.repositories.profileapi.ProfileRepository
 import com.orafaraujo.repositories.profileimpl.ProfileRepositoryImpl
 import com.orafaraujo.usecases.loadprofileapi.LoadProfileUseCase
 import com.orafaraujo.usecases.loadprofileimpl.LoadProfileUseCaseImpl
-import com.orafaraujo.usecases.loadprofileimpl.mapper.LoadProfileUseCaseMapper
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -19,10 +18,6 @@ abstract class ProfileModule {
 
     @Binds
     abstract fun provideRepository(profileRepositoryImpl: ProfileRepositoryImpl): ProfileRepository
-
-    @Binds
-    abstract fun provideUseCaseMapper(loadProfileUseCaseMapper: LoadProfileUseCaseMapper):
-            LoadProfileUseCaseMapper
 
     @Binds
     abstract fun provideUseCase(loadProfileUseCaseImpl: LoadProfileUseCaseImpl): LoadProfileUseCase

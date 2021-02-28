@@ -6,10 +6,11 @@ import androidx.lifecycle.viewModelScope
 import com.orafaraujo.usecases.loadprofileapi.LoadProfileUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 private const val TAG = "ProfileViewModel"
 
-class ProfileViewModel(
+class ProfileViewModel @Inject constructor(
     private val useCase: LoadProfileUseCase,
     private val mapper: ProfileMapper,
 ) : ViewModel() {
