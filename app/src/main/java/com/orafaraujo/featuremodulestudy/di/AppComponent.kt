@@ -1,6 +1,7 @@
 package com.orafaraujo.featuremodulestudy.di
 
 import com.orafaraujo.featuremodulestudy.di.features.ProfileModule
+import com.orafaraujo.featuremodulestudy.di.features.SubComponentsModule
 import com.orafaraujo.featuremodulestudy.di.viewmodel.ViewModelFactoryModule
 import com.orafaraujo.features.home.di.HomeComponent
 import com.orafaraujo.features.profileimpl.di.ProfileComponent
@@ -11,8 +12,8 @@ import javax.inject.Singleton
 @Component(
     modules = [
         AppModule::class,
-        SubComponentsModule::class,
         ViewModelFactoryModule::class,
+        SubComponentsModule::class,
         ProfileModule::class
     ]
 )

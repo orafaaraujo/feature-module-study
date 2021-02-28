@@ -1,4 +1,4 @@
-package com.orafaraujo.featuremodulestudy.di
+package com.orafaraujo.featuremodulestudy.di.features
 
 import com.orafaraujo.features.home.di.HomeComponent
 import com.orafaraujo.features.profileimpl.di.ProfileComponent

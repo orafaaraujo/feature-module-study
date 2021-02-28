@@ -17,10 +17,7 @@ import dagger.multibindings.IntoMap
 abstract class ProfileModule {
 
     @Binds
-    abstract fun provideRepository(profileRepositoryImpl: ProfileRepositoryImpl): ProfileRepository
-
-    @Binds
-    abstract fun provideUseCase(loadProfileUseCaseImpl: LoadProfileUseCaseImpl): LoadProfileUseCase
+    abstract fun provideFeature(profileFeatureImpl: ProfileFeatureImpl): ProfileFeature
 
     @Binds
     @IntoMap
@@ -28,6 +25,9 @@ abstract class ProfileModule {
     abstract fun provideProfileViewModel(viewModel: ProfileViewModel): ViewModel
 
     @Binds
-    abstract fun provideFeature(profileFeatureImpl: ProfileFeatureImpl): ProfileFeature
+    abstract fun provideUseCase(loadProfileUseCaseImpl: LoadProfileUseCaseImpl): LoadProfileUseCase
+
+    @Binds
+    abstract fun provideRepository(profileRepositoryImpl: ProfileRepositoryImpl): ProfileRepository
 
 }
