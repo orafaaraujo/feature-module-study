@@ -5,9 +5,15 @@ include ':features:home'
 
 include ':features:profile-api'
 include ':features:profile-impl'
+include ':features:detail-api'
+include ':features:detail-impl'
 
 include ':usecases:load-profile-api'
 include ':usecases:load-profile-impl'
+include ':usecases:load-detail-api'
+include ':usecases:load-detail-impl'
 
 include ':repositories:profile-remote-api'
 include ':repositories:profile-remote-impl'
+include ':repositories:detail-remote-api'
+include ':repositories:detail-remote-impl'
